@@ -1,10 +1,14 @@
 import React from 'react';
 import './App.css';
 import FirstComponent from './FirstComponent';
-import SecondComponent from './SecondComponent';
-import ThirdComponent from './ThirdComponent';
-import ProfValidator from './PropValidator';
-import ComponentCycle from './components/ComponentCycle';
+// import SecondComponent from './SecondComponent';
+// import ThirdComponent from './ThirdComponent';
+// import ProfValidator from './PropValidator';
+// import ComponentCycle from './components/ComponentCycle';
+// import FirstForm from './Forms/first_forms';
+import SecondForm from './Forms/SecondForm';
+import ThirdForm from './Forms/ThirdForm';
+import Handling from './Forms/EventHandling';
 
 class App extends React.Component {  
   render() {     
@@ -18,7 +22,9 @@ class App extends React.Component {
          {/* <SecondComponent test="Test Text"/> */}
          {/* <ThirdComponent/> */}
           {/* <ProfValidator/> */}
-          <ComponentCycle />
+          {/* <ComponentCycle /> */}
+          <ThirdForm name="I am doing props pass"/>
+          <Handling />
          </div>  
        );  
    }  

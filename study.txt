@@ -32,5 +32,7 @@ To find a specific child in the react component we  use  var myDiv = document.ge
 					
 	React Forms:
 	
+		Every form has Controlled Components and Un controlled components.
+		
 		
   
