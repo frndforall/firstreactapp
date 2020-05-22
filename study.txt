@@ -1,0 +1,36 @@
+To find a specific child in the react component we  use  var myDiv = document.getElementById('myDivOne');  ReactDOM.findDOMNode(myDivOne).style.color = 'red';
+
+
+  setState	= sets the state of member and initials the state update;
+  forceUpdate = state member can be updated but it shows the changes when we forceupdate only if we want to avoid setState.
+  findDOMNode = find a specific node to update either its properties or values.
+  
+  
+  React Component Life cycle:
+  
+  Initial Phase => Occurs only once at the start of the component cycle. It has getDefaultProps() and getInitialState() method calls internally.
+  
+  Mounting Phase=> instance of component is created and inserted in DOM. 
+					
+					componenetWillMount() -> 
+					componentDidMount() -> You can perform DOM queries once this method is called.
+					render() -> actual method where the content is defined. It should return single root html node element. If you dont want to render return null or false.
+  
+  Updating Phase  => Her we get Props and State. This phase repeat again and again based on the update of state. 
+  
+					componentWillRecieveProps() -> when component recieves new props. we can compare newProps to old props to set the state and change the UI.
+					shouldComponentUpdate() ->  when a component decides to change.
+					componentWillUpdate() -> 
+					renderer() ->
+					componentDidUpdate() -> After bind completes.
+  
+  Unmounting Phase
+					componenentWillUnMount() -> performs necessary cleanup.
+					
+					
+					
+					
+	React Forms:
+	
+		
+  
