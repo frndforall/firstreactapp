@@ -34,5 +34,9 @@ To find a specific child in the react component we  use  var myDiv = document.ge
 	
 		Every form has Controlled Components and Un controlled components.
 		
+		Controlled Componenets -> is bound to a value and is called or changes using event based callbacks. onChange should support setSate method to update the value of state member.
+		
+		
+		
 		
   
