@@ -36,7 +36,17 @@ To find a specific child in the react component we  use  var myDiv = document.ge
 		
 		Controlled Componenets -> is bound to a value and is called or changes using event based callbacks. onChange should support setSate method to update the value of state member.
 		
+	
+	React Routers: Helps us determin the route to open the flow.
+	
+	react-router for React apps
+	react-router-native for Native apps
+	react-router-dom for web apps
+	
+		there are 2 routers browser-router(dynamic) and hash-router(static)
 		
+		
+	
 		
 		
   

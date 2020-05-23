@@ -43,7 +43,6 @@ class ThirdForm extends React.Component {
                  onChange={this.handleInputChange} />  
              </label>  
              
-
              Number of persons that are attending are {this.state.numberOfPersons} and are they going {this.state.personGoing} and props value is {this.props.name}
          </form>  
      );  
