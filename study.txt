@@ -46,6 +46,41 @@ To find a specific child in the react component we  use  var myDiv = document.ge
 		there are 2 routers browser-router(dynamic) and hash-router(static)
 		
 		
+		React Redux:
+		
+		Connect is used to connect to redux and get/update the data in store.
+		mapStateToProps is first argument to connect. this is called every time when the store state changes.
+		
+		function mapStateToProps(state, ownProps?)  ownProps is optional. 
+		state is entire Redux state equalent to store.getState().
+		
+		function mapStateToProps(state) {
+		  const { todos } = state
+		  return { todoList: todos.allIds }
+		}
+		export default connect(mapStateToProps)(TodoList)
+		
+		ownProps are used only when we need any props to act on.
+		
+		function mapStateToProps(state, ownProps) {
+		  const { visibilityFilter } = state
+		  const { id } = ownProps
+		  const todo = getTodoById(state, id)
+
+		  // component receives additionally:
+		  return { todo, visibilityFilter }
+		}
+		
+		// component will recieve a, todos and filters.
+		function mapStateToProps(state) {
+		  return {
+			a: 42,
+			todos: state.todos,
+			filter: state.visibilityFilter
+		  }
+		}
+		
+		
 	
 		
 		
